@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    # ለቴዎድሮስ የሙከራ ፎልደር
+    - export TEWODROSPATH=/home/ajcimstu/fayda.ajcims.com/HRM/tewodros/
+    - /bin/cp -R * $TEWODROSPATH
+
+    # ለጓደኛዎ የሙከራ ፎልደር
+    - export PARTNERPATH=/home/ajcimstu/fayda.ajcims.com/HRM/partner/
+    - /bin/cp -R * $PARTNERPATH
+
+    # ለዋናው (Main) ስራ
+    - export MAINPATH=/home/ajcimstu/fayda.ajcims.com/HRM/
+    - /bin/cp -R * $MAINPATH
